@@ -4,7 +4,14 @@ body{
 .banner{
     text-align:center;
     font-family:sans-serif;
-    font-size:large;
+    font-size:xx-large;
+    background-image:url("/img/pvz-banner.jpg");
+    background-size:cover;
+    background-position:center;
+    height:10vh;
+}
+.banner>h1{
+    margin:0px;
 }
 .gameBoard{
     background-image:url("/img/Frontyard.webp");
@@ -91,5 +98,5 @@ body{
     color:darkslategrey;
 }
 .green{
-    color:palegreen;
+    color:green;
 }
