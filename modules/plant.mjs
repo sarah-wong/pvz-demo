@@ -1,6 +1,7 @@
-import * as data from "plantData";
+import {list as plantData} from "./plantData.mjs";
 
 class Plant{
+    
     constructor(data){
         this.name = data.name;
         this.image = `/img/${data.img}`;
@@ -9,14 +10,18 @@ class Plant{
         this.health = data.health;
         this.damage = data.damage;
         this.speed = data.speed * 1000; //s->ms conversion
+        
+        this.placed = false;
     }
-    async doAction(msg="does action"){
-        console.log(`${this.name}: msg`);
-    }
+
+    doAction = async () => {};
 }
 
 class Sunflower extends Plant{
     constructor(){
-        super(data.sunflower)
+        super(plantData.sunflower);
+    }
+    spawnSun(){
+        
     }
 }

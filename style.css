@@ -37,17 +37,11 @@ body{
 /* Sun Counter */
 .sunCounter{
     border:2px solid goldenrod;
-    width:100px;
+    width:80px;
     display:flex;
     flex-flow:column nowrap;
     justify-content:space-between;
     align-items:center;
-}
-
-.sunIcon{
-    width:80px;
-    height:80px;
-    margin:auto;
 }
 .count{
     background:antiquewhite;
@@ -59,7 +53,7 @@ body{
 .plantbar{
     background-color: rgb(211, 164, 102);
     border-radius:10px;
-    width:600px;
+    width:480px;
     display:flex;
     flex-flow:row nowrap;
     align-items:center;
@@ -69,16 +63,17 @@ body{
 .seedpacket{
     border:1px solid grey;
     background:antiquewhite;
-    width:100px;
+    width:80px;
     display:flex;
     flex-flow:column nowrap;
     justify-content:space-between;
     align-items:center;
     padding:5px 0px;
 }
-.plantIcon{
-    height:80px;
-    width:80px;
+.icon{
+    height:60px;
+    width:60px;
+    margin:auto;
 }
 .cost{
     margin:0px;
@@ -87,11 +82,11 @@ body{
 /* Shovel Box */
 .shovelBox{
     border:1px solid black;
-    width:100px;
+    width:80px;
     padding:2px;
-}
-.shovelIcon{
-    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
 }
 
 .grey{
