@@ -1,0 +1,1 @@
+import {zombies as data} from "./data.mjs";

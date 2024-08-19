@@ -1,27 +1,65 @@
-import {list as plantData} from "./plantData.mjs";
+import {plants as data} from "./data.mjs";
 
 class Plant{
     
-    constructor(data){
+    constructor(elem, data){
         this.name = data.name;
-        this.image = `/img/${data.img}`;
-        this.cost = data.cost;
-        this.recharge = data.recharge * 1000; //s->ms conversion
         this.health = data.health;
         this.damage = data.damage;
         this.speed = data.speed * 1000; //s->ms conversion
-        
+
+        this.elem = elem;
+        this.elem.querySelector("img").src = `/img/${data.img}`;
+        this.elem.classList.add("plant");
+
         this.placed = false;
     }
 
-    doAction = async () => {};
+    action(){}
+
+    init(loopAction = true){
+        if(loopAction){
+            setInterval(this.action, this.speed);
+        }
+        else{
+            setTimeout(this.action, this.speed);
+        }
+    }
+
+    handleFollowMouse(event){
+        if(!this.placed){
+            this.elem.style.position = "absolute";
+            this.elem.style.left = event.pageX;
+            this.elem.style.top = event.pageY;
+        }
+    }
+
+    handleDrop(event){
+        this.placed = true;
+    }
 }
 
 class Sunflower extends Plant{
-    constructor(){
-        super(plantData.sunflower);
+    constructor(elem){
+        super(elem, data.sunflower);
     }
-    spawnSun(){
+    action(){
         
+    }
+}
+class Peashooter extends Plant{
+    constructor(){
+        super(elem, data.peashooter);
+    }
+    shoot(){
+
+    }
+}
+class CherryBomb extends Plant{
+    construction(){
+        super(elem, data.cherrybomb);
+    }
+    explode(){
+
     }
 }

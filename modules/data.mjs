@@ -1,4 +1,4 @@
-const list = {
+const plants = {
     sunflower : {
         name : "Sunflower",
         img : "sunflower.webp",
@@ -54,5 +54,19 @@ const list = {
         speed : 1.5
     }
 }
+const zombies = {
+    normal : {
+        health : 10,
+        armor : 0
+    },
+    conehead : {
+        health : 10,
+        armor : 18
+    },
+    buckethead : {
+        health : 10,
+        armor : 55
+    }
+}
 
-export {list};
+export {plants, zombies};
