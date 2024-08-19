@@ -1,0 +1,90 @@
+body{
+    margin:0px;
+}
+.banner{
+    text-align:center;
+    font-family:sans-serif;
+    font-size:large;
+}
+.gameBoard{
+    background-image:url("/img/Frontyard.webp");
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:top;
+
+    height:90vh;
+}
+
+/* TopBar */
+.topbar{
+    background:saddlebrown;
+    width:fit-content;
+    margin: auto;
+    display:flex;
+    justify-content:left;
+    padding:5px;
+    position:relative;
+    gap:10px;
+}
+
+/* Sun Counter */
+.sunCounter{
+    border:solid goldenrod;
+    width:100px;
+    display:flex;
+    flex-flow:column nowrap;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.sunIcon{
+    width:80px;
+    height:80px;
+    margin:auto;
+}
+.count{
+    background:antiquewhite;
+    text-align:center;
+    font-size:x-large;
+    width:100%;
+}
+/* PlantBar */
+.plantbar{
+    border:2px solid tan;
+    border-radius:10px;
+    width:600px;
+    display:flex;
+    flex-flow:row nowrap;
+    align-items:center;
+    padding:5px;
+}
+.seedpacket{
+    border:1px solid grey;
+    background:antiquewhite;
+    width:100px;
+    display:flex;
+    flex-flow:column nowrap;
+    justify-content:space-between;
+    align-items:center;
+    padding:5px 0px;
+}
+.plantIcon{
+    height:80px;
+    width:80px;
+}
+.cost{
+    margin:0px;
+}
+
+/* Shovel Box */
+.shovelBox{
+    border:solid black;
+    width:100px;
+}
+
+.grey{
+    color:darkslategrey;
+}
+.green{
+    color:palegreen;
+}
