@@ -29,7 +29,7 @@ body{
 
 /* Sun Counter */
 .sunCounter{
-    border:solid goldenrod;
+    border:2px solid goldenrod;
     width:100px;
     display:flex;
     flex-flow:column nowrap;
@@ -50,13 +50,14 @@ body{
 }
 /* PlantBar */
 .plantbar{
-    border:2px solid tan;
+    background-color: rgb(211, 164, 102);
     border-radius:10px;
     width:600px;
     display:flex;
     flex-flow:row nowrap;
     align-items:center;
     padding:5px;
+    gap:5px;
 }
 .seedpacket{
     border:1px solid grey;
@@ -78,8 +79,12 @@ body{
 
 /* Shovel Box */
 .shovelBox{
-    border:solid black;
+    border:1px solid black;
     width:100px;
+    padding:2px;
+}
+.shovelIcon{
+    width:100%;
 }
 
 .grey{
